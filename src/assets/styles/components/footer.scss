@@ -1,0 +1,11 @@
+@import '../properties';
+
+.footer{
+	background-color: $dark-primary;
+	color: #fff;
+	font-size: 50px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

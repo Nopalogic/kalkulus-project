@@ -1,0 +1,54 @@
+@import '../properties';
+
+.home {
+	padding: 0;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+
+	.header {
+		height: 91vh;
+		background-color: $dark-secondary;
+
+		.lh-kalkulus {
+			line-height: 35px;
+		}
+
+		.headerSearch {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			width: 85%;
+			height: 70px;
+			border: 2px solid $dark-primary;
+			border-radius: 12px;
+			background-color: #fff;
+
+			.input-kalkulus{
+				width: 17rem;
+				outline: none;
+			}
+		}
+	}
+
+	.menuIcon {
+		width: 128px;
+		margin: 0;
+	}
+
+	.list {
+		background-color: $gray;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+	
+		.container > hr {
+			margin: 30px 0px 30px 0px;
+		}
+	
+		.card > h3, p {
+			margin-left: 18px;
+			color: $dark-primary;
+		}
+	}
+	
+}

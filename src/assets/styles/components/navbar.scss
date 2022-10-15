@@ -1,0 +1,37 @@
+@import '../properties';
+
+.navbar {
+	height: 80px;
+	background-color: $dark-primary;
+	display: flex;
+	justify-content: center;
+
+	.navContainer {
+		width: 100%;
+		max-width: 1024px;
+		color: #fff;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.logo {
+			font-weight: 500;
+			font-size: 24px;
+		}
+
+		.navItems {
+			width: 90px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.navButton {
+				border: none;
+				outline: none;
+				background-color: transparent;
+				color: #fff;
+				font-size: 22px;
+			}
+		}
+	}
+}
