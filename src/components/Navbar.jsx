@@ -1,6 +1,5 @@
 import { faMagnifyingGlass, faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import '../assets/styles/components/navbar.scss';
 
 const Navbar = () => {
 	return (
