@@ -1,12 +1,13 @@
 import '../assets/styles/pages/home.scss';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import bg from '../assets/images/bg-sk-2.png';
+import bg from '../assets/images/bg-kalkulus.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import moduleIcon from '../assets/images/stack-of-paper.png';
 import taskIcon from '../assets/images/a-paper.png';
 import cover from '../assets/images/404.png';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 	return (
@@ -41,15 +42,19 @@ const Home = () => {
 
 			{/* Menu Section */}
 			<div className="menu bg-dark text-light">
-				<div className="container pt-5 pb-4">
+				<div className="container pt-5">
 					<div className="row justify-content-around">
-						<div id="modules" className="col-md-4 text-center">
-							<img src={moduleIcon} alt="module-icon" className="menuIcon" />
-							<h3 className="title mt-2 fs-4">Modul</h3>
+						<div id="modules" className="col-6 text-center mb-4">
+							<Link to={'/modules'} style={{ textDecoration: 'none' }}>
+								<img src={moduleIcon} alt="module-icon" className="menuIcon" />
+								<h3 className="title mt-2 fs-4 text-white">Modul</h3>
+							</Link>
 						</div>
-						<div id="tasks" className="col-md-4 text-center">
-							<img src={taskIcon} alt="task-icon" className="menuIcon" />
-							<h3 className="title mt-2 fs-4">Latihan Soal</h3>
+						<div id="tasks" className="col-6 text-center mb-4">
+							<Link to={'/exercises'} style={{ textDecoration: 'none' }}>
+								<img src={taskIcon} alt="task-icon" className="menuIcon" />
+								<h3 className="title mt-2 fs-4 text-white">Latihan Soal</h3>
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -90,6 +95,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
+			
 			<Footer />
 		</div>
 	);

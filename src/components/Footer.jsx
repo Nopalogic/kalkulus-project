@@ -35,9 +35,7 @@ const Footer = () => {
 			<div class="container">
 				<div class="row">
 					<div class="col-12 text-center">
-						<p class="copyright-text">
-							This Website created by Naufal Adhi.
-						</p>
+						<p class="copyright-text">This Website created by Naufal Adhi.</p>
 					</div>
 				</div>
 			</div>
