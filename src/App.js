@@ -12,7 +12,7 @@ function App() {
 				<Route path="/" element={<Home />} />
 				<Route path="/modules" element={<Moduls />} />
 				<Route path="/exercises" element={<Exercises />} />
-				<Route path="/limit" element={<Limit />} />
+				<Route path="/modules/limit" element={<Limit />} />
 			</Routes>
 		</BrowserRouter>
 	);

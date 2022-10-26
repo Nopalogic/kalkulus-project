@@ -1,11 +1,20 @@
 import { faMagnifyingGlass, faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+	const navigate = useNavigate();
+
+	const navigateToHome = () => {
+		navigate('/', { replace: true });
+	};
+
 	return (
 		<div className="navbar bg-dark text-light sticky-top">
 			<div className="container">
-				<span className="fs-3">KALKULUS</span>
+				<span className="fs-3 text-white" onClick={navigateToHome}>
+					KALKULUS
+				</span>
 				<div className="row">
 					<div className="col">
 						<button className="btn btn-transparent text-light fs-4">

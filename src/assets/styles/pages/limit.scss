@@ -1,0 +1,40 @@
+@import '../properties';
+
+.limit {
+	background-color: $dark-secondary;
+
+	.sidebar {
+		height: 350px;
+		overflow-y: scroll;
+		margin-top: 45px;
+		padding: 0 30px;
+	}
+
+	.wrapper {
+    .main{
+      height: 100vh;
+      margin: 45px 0 0 10px;
+      padding: 16px;
+      background-color: $dark-primary;
+      color: #fff;
+      border-radius: 8px;
+    }
+
+		.back-btn {
+			display: flex;
+      justify-content: right;
+			margin-top: 16px;
+
+			button {
+				border: none;
+				outline: none;
+        border-radius: 8px;
+				padding: 8px 16px;
+        font-weight: bold;
+        font-size: 22px;
+				background-color: $blue;
+				color: #fff;
+			}
+		}
+	}
+}
