@@ -1,21 +1,32 @@
-import '../assets/styles/pages/home.scss';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import moduleIcon from '../assets/images/stack-of-paper.png';
-import taskIcon from '../assets/images/a-paper.png';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import cover from '../assets/images/404.png';
 import bg from '../assets/images/bg-kalkulus.png';
+import '../assets/styles/pages/home.scss';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from 'react-router-dom';
+
 
 const Home = () => {
-	const navigate = useNavigate();
-
-	const navigateToModule = () => {
-		navigate('/modules', { replace: true });
-	};
+	let moduls = [
+		{
+			url: '/pertidaksamaan',
+			title: 'Pertidaksamaan',
+			desc: 'adfa',
+		},
+		{
+			url: '/fungsi',
+			title: 'Fungsi',
+			desc: 'adfa',
+		},
+		{
+			url: '/limit',
+			title: 'Limit',
+			desc: 'adfa',
+		},
+	];
 
 	return (
 		<div className="home">
@@ -47,22 +58,6 @@ const Home = () => {
 				</div>
 			</div>
 
-			{/* Menu Section */}
-			<div className="menu bg-dark text-light">
-				<div className="container pt-5">
-					<div className="row justify-content-around">
-						<div id="modules" className="col-6 text-center mb-4" onClick={navigateToModule}>
-							<img src={moduleIcon} alt="module-icon" className="menuIcon" />
-							<h3 className="title mt-2 fs-4 text-white">Modul</h3>
-						</div>
-						<div id="tasks" className="col-6 text-center mb-4">
-							<img src={taskIcon} alt="task-icon" className="menuIcon" />
-							<h3 className="title mt-2 fs-4 text-white">Latihan Soal</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-
 			{/* List */}
 			<div className="list">
 				<div className="container mt-5">
@@ -73,27 +68,19 @@ const Home = () => {
 					<hr />
 					<div className="container">
 						<div className="row">
-							<div className="col-md-4 col-xs-12 mb-4">
-								<div className="card">
-									<img src={cover} alt="gambar" />
-									<h3>Fungsi</h3>
-									<p>Lorem ipsum dolor sit amet.</p>
+							{moduls.map((modul) => (
+								<div className="col-md-4 col-xs-12 mb-4">
+									<Link to={modul.url} style={{ textDecoration: 'none' }}>
+										<div className="card">
+											<img src={cover} alt="gambar" />
+											<div className="card-body text-dark">
+												<h3 className="card-title">{modul.title}</h3>
+												<p className="card-text">{modul.desc}</p>
+											</div>
+										</div>
+									</Link>
 								</div>
-							</div>
-							<div className="col-md-4 col-xs-12 mb-4">
-								<div className="card">
-									<img src={cover} alt="gambar" />
-									<h3>Fungsi</h3>
-									<p>Lorem ipsum dolor sit amet.</p>
-								</div>
-							</div>
-							<div className="col-md-4 col-xs-12 mb-4">
-								<div className="card">
-									<img src={cover} alt="gambar" />
-									<h3>Fungsi</h3>
-									<p>Lorem ipsum dolor sit amet.</p>
-								</div>
-							</div>
+							))}
 						</div>
 					</div>
 				</div>

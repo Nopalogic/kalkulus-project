@@ -8,7 +8,7 @@
 	color: $lightgray;
 
 	hr {
-		border-top-color: #bbb;
+		border-top-color: $lightgray;
 		opacity: 0.5;
 
 		&.small {
@@ -24,9 +24,8 @@
 		letter-spacing: 2px;
 	}
 
-	a {
-		color: $lightgray;
-		text-decoration: none;
+	p {
+		color: #737373;
 
 		&:hover {
 			color: #3366cc;
@@ -37,13 +36,13 @@
 	.footer-links {
 		padding-left: 0;
 		list-style: none;
+	}
 
-		li {
-			display: block;
-		}
-		
+	li {
+		display: block;
+
 		p {
-			color: $lightgray;
+			color: #737373;
 
 			&:active,
 			&:focus,
@@ -55,12 +54,7 @@
 		}
 	}
 
-	// .footer-links.inline li {
-	// 	display: inline-block;
-	// }
-
-	.copyright-text {
-		margin: 0;
+	&.inline li {
+		display: inline-block;
 	}
 }
-
