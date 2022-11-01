@@ -1,4 +1,15 @@
-body{
-  font-family: 'Quicksand',  sans-serif;
-}
+body {
+	font-family: 'Quicksand', sans-serif;
 
+	&::-webkit-scrollbar {
+		width: 1em;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #212529;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #737373;
+	}
+}

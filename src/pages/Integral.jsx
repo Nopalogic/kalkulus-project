@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
-import '../assets/styles/pages/inequality.scss';
+import '../assets/styles/pages/integral.scss';
 import Navbar from '../components/Navbar';
 
-const Inequality = () => {
+const Integral = () => {
 	const navigate = useNavigate();
 	const navigateToHome = () => {
 		navigate('/');
@@ -21,7 +21,7 @@ const Inequality = () => {
 	];
 
 	return (
-		<div className="inequality">
+		<div className="integral">
 			<Navbar />
 			<div className="container pb-5">
 				<div className="sidebar">
@@ -52,4 +52,4 @@ const Inequality = () => {
 	);
 };
 
-export default Inequality;
+export default Integral;

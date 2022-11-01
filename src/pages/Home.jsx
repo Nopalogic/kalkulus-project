@@ -1,29 +1,46 @@
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import cover from '../assets/images/404.png';
 import bg from '../assets/images/bg-kalkulus.png';
+import img1 from '../assets/images/math1.jpg';
+import img2 from '../assets/images/math2.jpg';
+import img3 from '../assets/images/math5.jpg';
+import img4 from '../assets/images/math4.jpg';
+import img5 from '../assets/images/math3.jpg';
 import '../assets/styles/pages/home.scss';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
-
-
 const Home = () => {
 	let moduls = [
 		{
+			img: img1,
+			url: '/sistem-bilangan',
+			title: 'Sistem Bilangan',
+			desc: 'adfa',
+		},
+		{
+			img: img2,
 			url: '/pertidaksamaan',
 			title: 'Pertidaksamaan',
 			desc: 'adfa',
 		},
 		{
+			img: img3,
 			url: '/fungsi',
 			title: 'Fungsi',
 			desc: 'adfa',
 		},
 		{
+			img: img4,
 			url: '/limit',
 			title: 'Limit',
+			desc: 'adfa',
+		},
+		{
+			img: img5,
+			url: '/integral',
+			title: 'Integral',
 			desc: 'adfa',
 		},
 	];
@@ -38,8 +55,8 @@ const Home = () => {
 						<div className="col-md-7">
 							<h1 className="display-1 fw-bold text-white">KALKULUS</h1>
 							<p className="fs-3 text-white lh-kalkulus">
-								Website belajar kalkulus terlengkap dan mudah dipahami, seperti <span className="badge bg-danger">Fungsi</span> <span className="badge bg-primary">Limit</span>{' '}
-								<span className="badge bg-success">Integral</span> <span className="badge bg-warning">Diferensial</span>
+								Website belajar kalkulus terlengkap dan mudah dipahami, seperti <span className="badge bg-danger">Fungsi</span> <span className="badge bg-primary">Limit</span> <span className="badge bg-success">Integral</span>{' '}
+								<span className="badge bg-warning">Diferensial</span>
 							</p>
 							<hr className="my-4 text-white-50" />
 							<form action="/" method="get" className="">
@@ -72,7 +89,7 @@ const Home = () => {
 								<div className="col-md-4 col-xs-12 mb-4">
 									<Link to={modul.url} style={{ textDecoration: 'none' }}>
 										<div className="card">
-											<img src={cover} alt="gambar" />
+											<img src={modul.img} alt="gambar" />
 											<div className="card-body text-dark">
 												<h3 className="card-title">{modul.title}</h3>
 												<p className="card-text">{modul.desc}</p>

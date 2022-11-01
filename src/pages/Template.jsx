@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
-import '../assets/styles/pages/inequality.scss';
+import '../assets/styles/pages/sistem-bilangan.scss';
 import Navbar from '../components/Navbar';
 
-const Inequality = () => {
+const SistemBilangan = () => {
 	const navigate = useNavigate();
 	const navigateToHome = () => {
 		navigate('/');
@@ -21,7 +21,7 @@ const Inequality = () => {
 	];
 
 	return (
-		<div className="inequality">
+		<div className="sistem-bilangan">
 			<Navbar />
 			<div className="container pb-5">
 				<div className="sidebar">
@@ -37,7 +37,7 @@ const Inequality = () => {
 					<div className="col-12 col-md-8 offset-md-4">
 						<div className="main">
 							<div className="wrapper">
-								<h2>Pertidaksamaan</h2>
+								<h2>Sistem Bilangan</h2>
 								<hr className="my-2" />
 								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tempora illum aut corporis sequi deserunt?</p>
 							</div>
@@ -52,4 +52,4 @@ const Inequality = () => {
 	);
 };
 
-export default Inequality;
+export default SistemBilangan;
