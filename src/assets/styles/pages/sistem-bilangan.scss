@@ -5,7 +5,7 @@
 	background-color: $dark-secondary;
 
 	.sidebar {
-		height: 485px;
+		// height: 485px;
 		overflow-y: scroll;
 		position: fixed;
 		padding-right: 30px;
@@ -18,38 +18,37 @@
 		&::-webkit-scrollbar {
 			width: 1em;
 		}
-		 
+
 		&::-webkit-scrollbar-track {
 			background-color: $dark-primary;
 		}
-		 
+
 		&::-webkit-scrollbar-thumb {
 			background-color: $lightgray;
 			border-radius: 4px;
 		}
 	}
 
-	.main {
-		height: auto;
-
+	.main-sisbil {
 		.wrapper {
-			height: 100vh;
 			margin: 45px 0 0 10px;
 			padding: 16px;
 			background-color: $dark-primary;
 			color: #fff;
 			border-radius: 8px;
 
-			#pengertian{
-				height: 100vh;
-			}
-
-			p{
-				font-size: 18px;
+			p {
+				font-size: 20px;
 				text-align: justify;
 			}
 
-			i{
+			.venn{
+				width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+
+			i, #tnr {
 				font-family: 'Times New Roman', Times, serif;
 			}
 		}
@@ -76,5 +75,9 @@
 @media screen and (max-width: 900px) {
 	.sidebar {
 		display: none;
+	}
+
+	.wrapper > p {
+		font-size: 18px;
 	}
 }

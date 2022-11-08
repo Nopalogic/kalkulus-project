@@ -1,6 +1,6 @@
 @import '../properties';
 
-.sistem-bilangan {
+.template {
 	font-family: $quicksand;
 	background-color: $dark-secondary;
 
@@ -29,7 +29,7 @@
 		}
 	}
 
-	.main {
+	.main-template {
 		.wrapper {
 			height: 100vh;
 			margin: 45px 0 0 10px;

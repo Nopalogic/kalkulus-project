@@ -2,11 +2,11 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import bg from '../assets/images/bg-kalkulus.png';
-import img1 from '../assets/images/math1.jpg';
-import img2 from '../assets/images/math2.jpg';
-import img3 from '../assets/images/math5.jpg';
-import img4 from '../assets/images/math4.jpg';
-import img5 from '../assets/images/math3.jpg';
+// import img1 from '../assets/images/math1.jpg';
+// import img2 from '../assets/images/math2.jpg';
+// import img3 from '../assets/images/math5.jpg';
+// import img4 from '../assets/images/math4.jpg';
+// import img5 from '../assets/images/math3.jpg';
 import '../assets/styles/pages/home.scss';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
@@ -14,31 +14,31 @@ import Navbar from '../components/Navbar';
 const Home = () => {
 	let moduls = [
 		{
-			img: img1,
+			// img: img1,
 			url: '/sistem-bilangan',
 			title: 'Sistem Bilangan',
 			desc: 'adfa',
 		},
 		{
-			img: img2,
+			// img: img2,
 			url: '/pertidaksamaan',
 			title: 'Pertidaksamaan',
 			desc: 'adfa',
 		},
 		{
-			img: img3,
+			// img: img3,
 			url: '/fungsi',
 			title: 'Fungsi',
 			desc: 'adfa',
 		},
 		{
-			img: img4,
+			// img: img4,
 			url: '/limit',
 			title: 'Limit',
 			desc: 'adfa',
 		},
 		{
-			img: img5,
+			// img: img5,
 			url: '/integral',
 			title: 'Integral',
 			desc: 'adfa',

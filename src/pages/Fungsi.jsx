@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import '../assets/styles/pages/fungsi.scss';
 import Navbar from '../components/Navbar';
 
@@ -24,16 +25,18 @@ const Fungsi = () => {
 			<div className="container pb-5">
 				<div className="sidebar">
 					{subMaterial.map((m) => (
-						<div className="card mb-3 bg-dark text-white pointer">
-							<div className="card-body pt-2 pb-2">
-								<h4 className="m-0 p-0">{m.title}</h4>
+						<Link to={m.id} spy={true} smooth={false} offset={-72} duration={100} style={{ textDecoration: 'none' }}>
+							<div className="card mb-3 bg-dark text-white pointer">
+								<div className="card-body pt-2 pb-2">
+									<h4 className="m-0 p-0">{m.title}</h4>
+								</div>
 							</div>
-						</div>
+						</Link>
 					))}
 				</div>
 				<div className="row">
 					<div className="col-12 col-md-8 offset-md-4">
-						<div className="main">
+						<div className="main-fungsi">
 							<div className="wrapper">
 								<h2>Fungsi</h2>
 								<hr className="my-2" />
