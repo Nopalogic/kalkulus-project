@@ -6,6 +6,7 @@
 
 	.sidebar {
 		// height: 485px;
+		width: 350px;
 		overflow-y: scroll;
 		position: fixed;
 		padding-right: 30px;
@@ -42,14 +43,13 @@
 				text-align: justify;
 			}
 
-			.venn{
-				width: 100%;
-				margin: 0;
-				padding: 0;
+			i,
+			#tnr {
+				font-family: 'Times New Roman', Times, serif;
 			}
 
-			i, #tnr {
-				font-family: 'Times New Roman', Times, serif;
+			img {
+				width: auto;
 			}
 		}
 
@@ -77,7 +77,26 @@
 		display: none;
 	}
 
-	.wrapper > p {
-		font-size: 18px;
+	.main-sisbil {
+		.wrapper > p {
+			font-size: 12px;
+		}
+
+		.back-btn {
+			display: flex;
+			justify-content: right;
+			margin-top: 16px;
+
+			button {
+				border: none;
+				outline: none;
+				border-radius: 8px;
+				padding: 8px 16px;
+				font-weight: bold;
+				font-size: 14px;
+				background-color: $blue;
+				color: #fff;
+			}
+		}
 	}
 }

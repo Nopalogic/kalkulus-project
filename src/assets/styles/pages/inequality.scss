@@ -5,7 +5,8 @@
 	background-color: $dark-secondary;
 
 	.sidebar {
-		height: 485px;
+		// height: 485px;
+		width: 350px;
 		overflow-y: scroll;
 		position: fixed;
 		padding-right: 30px;
@@ -18,11 +19,11 @@
 		&::-webkit-scrollbar {
 			width: 1em;
 		}
-		 
+
 		&::-webkit-scrollbar-track {
 			background-color: $dark-primary;
 		}
-		 
+
 		&::-webkit-scrollbar-thumb {
 			background-color: $lightgray;
 			border-radius: 4px;
@@ -31,12 +32,26 @@
 
 	.main {
 		.wrapper {
-			height: 100vh;
 			margin: 45px 0 0 10px;
 			padding: 16px;
 			background-color: $dark-primary;
 			color: #fff;
 			border-radius: 8px;
+
+			p {
+				font-size: 20px;
+				text-align: justify;
+
+				table {
+					margin: 12px 0;
+
+					td {
+						text-align: center;
+						width: 50px;
+						border: 2px solid #fff;
+					}
+				}
+			}
 		}
 
 		.back-btn {

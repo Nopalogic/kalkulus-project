@@ -1,12 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import ScrollToTop from './components/ScrollToTop';
+import ComingSoon from './pages/ComingSoon';
 import Home from './pages/Home';
-import SistemBilangan from './pages/SistemBilangan';
 import Inequality from './pages/Inequality';
-import Fungsi from './pages/Fungsi';
-import Limit from './pages/Limit';
-import Integral from './pages/Integral';
+import SistemBilangan from './pages/SistemBilangan';
 
 function App() {
 	return (
@@ -16,9 +14,9 @@ function App() {
 				<Route path="/" element={<Home />} />
 				<Route path="/sistem-bilangan" element={<SistemBilangan />} />
 				<Route path="/pertidaksamaan" element={<Inequality />} />
-				<Route path="/fungsi" element={<Fungsi />} />
-				<Route path="/limit" element={<Limit />} />
-				<Route path="/integral" element={<Integral />} />
+				<Route path="/fungsi" element={<ComingSoon />} />
+				<Route path="/limit" element={<ComingSoon />} />
+				<Route path="/integral" element={<ComingSoon />} />
 			</Routes>
 		</BrowserRouter>
 	);

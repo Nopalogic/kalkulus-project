@@ -13,10 +13,10 @@ const Navbar = () => {
 	return (
 		<div className="navbar bg-dark text-light sticky-top">
 			<div className="container">
-				<span className="fs-3 text-white" onClick={navigateToHome}>
-					KALKULUS
+				<span className="fs-2 text-white" onClick={navigateToHome} style={{ cursor: 'pointer' }}>
+					KALKUL<span className='text-danger'>US</span>
 				</span>
-				<div className="row">
+				{/* <div className="row">
 					<div className="col">
 						<button className="btn btn-transparent text-light fs-4">
 							<FontAwesomeIcon icon={faMagnifyingGlass} />
@@ -27,7 +27,7 @@ const Navbar = () => {
 							<FontAwesomeIcon icon={faSun} />
 						</button>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
