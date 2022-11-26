@@ -2,14 +2,10 @@ import { InlineMath } from 'react-katex';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import '../assets/styles/pages/fungsi.scss';
+import BackButton from '../components/BackButton';
 import Navbar from '../components/Navbar';
 
 const Fungsi = () => {
-	const navigate = useNavigate();
-	const navigateToHome = () => {
-		navigate('/');
-	};
-
 	let subMaterial = [
 		{
 			id: 'pengertian',
@@ -138,7 +134,7 @@ const Fungsi = () => {
 													<InlineMath math="(\frac f g)(x)=\frac{f(x)}{g(x)}" />
 													<br />
 													<div className="ms-custom">
-														<InlineMath math='=\frac{\big(\frac{1-x}{1+x}\big)}{(\frac{1-x}{x})}' />
+														<InlineMath math="=\frac{\big(\frac{1-x}{1+x}\big)}{(\frac{1-x}{x})}" />
 													</div>
 												</li>
 												<li>
@@ -150,9 +146,7 @@ const Fungsi = () => {
 									</p>
 								</section>
 							</div>
-							<div className="back-btn">
-								<button onClick={navigateToHome}>Kembali</button>
-							</div>
+							<BackButton />
 						</div>
 					</div>
 				</div>

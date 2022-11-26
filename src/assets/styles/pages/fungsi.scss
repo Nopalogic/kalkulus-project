@@ -18,11 +18,11 @@
 		&::-webkit-scrollbar {
 			width: 1em;
 		}
-		 
+
 		&::-webkit-scrollbar-track {
 			background-color: $dark-primary;
 		}
-		 
+
 		&::-webkit-scrollbar-thumb {
 			background-color: $lightgray;
 			border-radius: 4px;
@@ -42,29 +42,11 @@
 				text-align: justify;
 				line-height: 28px;
 
-				li{
-					
-					.ms-custom{
+				li {
+					.ms-custom {
 						margin-left: 115px;
 					}
 				}
-			}
-		}
-
-		.back-btn {
-			display: flex;
-			justify-content: right;
-			margin-top: 16px;
-
-			button {
-				border: none;
-				outline: none;
-				border-radius: 8px;
-				padding: 8px 16px;
-				font-weight: bold;
-				font-size: 22px;
-				background-color: $blue;
-				color: #fff;
 			}
 		}
 	}

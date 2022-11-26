@@ -1,15 +1,10 @@
 import { InlineMath } from 'react-katex';
-import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import '../assets/styles/pages/inequality.scss';
+import BackButton from '../components/BackButton';
 import Navbar from '../components/Navbar';
 
 const Inequality = () => {
-	const navigate = useNavigate();
-	const navigateToHome = () => {
-		navigate('/');
-	};
-
 	let subMaterial = [
 		{
 			id: 'pengertian',
@@ -268,9 +263,7 @@ const Inequality = () => {
 									</p>
 								</section>
 							</div>
-							<div className="back-btn">
-								<button onClick={navigateToHome}>Kembali</button>
-							</div>
+							<BackButton />
 						</div>
 					</div>
 				</div>

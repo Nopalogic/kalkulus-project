@@ -17,31 +17,37 @@ const Home = () => {
 			// img: img1,
 			url: '/sistem-bilangan',
 			title: 'Sistem Bilangan',
-			desc: 'adfa',
+			desc: 'Himpunan bilangan yang disertai dengan operasi penjumlahan dan per... Read more',
 		},
 		{
 			// img: img2,
 			url: '/pertidaksamaan',
 			title: 'Pertidaksamaan',
-			desc: 'adfa',
+			desc: 'Kalimat terbuka yang memuat ungkapan "tidak sama dengan", "lebih... Read more',
 		},
 		{
 			// img: img3,
 			url: '/fungsi',
 			title: 'Fungsi',
-			desc: 'adfa',
+			desc: 'pemetaan setiap anggota dari suatu himpunan (disebut dengan... Read more',
 		},
 		{
 			// img: img4,
 			url: '/limit',
 			title: 'Limit',
-			desc: 'adfa',
+			desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium... Read more',
+		},
+		{
+			// img: img4,
+			url: '/diferensial',
+			title: 'Diferensial',
+			desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium... Read more',
 		},
 		{
 			// img: img5,
 			url: '/integral',
 			title: 'Integral',
-			desc: 'adfa',
+			desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium... Read more',
 		},
 	];
 
@@ -59,14 +65,14 @@ const Home = () => {
 								<span className="badge bg-warning">Diferensial</span>
 							</p>
 							<hr className="my-4 text-white-50" />
-							<form action="/" method="get" className="">
+							{/* <form action="/" method="get" className=""> */}
 								<div className="headerSearch">
 									<input type="text" placeholder="Belajar apa kita hari ini?" className="border-0 fs-4 input-kalkulus" />
 									<button type="submit" className="bg-transparent border-0 fs-4">
 										<FontAwesomeIcon icon={faMagnifyingGlass} />
 									</button>
 								</div>
-							</form>
+							{/* </form> */}
 						</div>
 						<div className="col-md-5 d-none d-md-block d-lg-block text-right">
 							<img src={bg} alt="bg-kalkulus" className="w-100 text-right" />
@@ -89,9 +95,9 @@ const Home = () => {
 								<div className="col-md-4 col-xs-12 mb-4">
 									<Link to={modul.url} style={{ textDecoration: 'none' }}>
 										<div className="card">
-											<img src={modul.img} alt="gambar" />
+											{/* <img src={modul.img} alt="gambar" /> */}
 											<div className="card-body text-dark">
-												<h3 className="card-title">{modul.title}</h3>
+												<h5 className="card-title">{modul.title}</h5>
 												<p className="card-text">{modul.desc}</p>
 											</div>
 										</div>

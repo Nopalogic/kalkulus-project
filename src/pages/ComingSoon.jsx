@@ -1,21 +1,24 @@
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import '../assets/styles/pages/comingsoon.scss';
 
 const ComingSoon = () => {
 	const navigate = useNavigate();
 
 	const navigateToBack = () => {
-		navigate('/', { replace: true });
+		navigate('/');
 	};
 
 	return (
 		<div className="comingsoon">
 			<Navbar />
-			<div className="d-flex justify-content-center align-items-center">
-				<div className="wrapper">
-					<h4>coming soon</h4>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, ipsam?</p>
-					<button onClick={navigateToBack()}>Back</button>
+			<div className="csContainer">
+				<div className="csWrapper">
+					<h2>Coming Soon</h2>
+					<div className="box">
+						<p>Sorry, this website is under construction. We're working hard to imporve this website and already to launch after.</p>
+					</div>
+					<button onClick={navigateToBack}>Back</button>
 				</div>
 			</div>
 		</div>

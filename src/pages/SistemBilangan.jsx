@@ -1,17 +1,11 @@
 import { BlockMath, InlineMath } from 'react-katex';
-import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import venn from '../assets/images/him-bilangan.png';
 import '../assets/styles/pages/sistem-bilangan.scss';
+import BackButton from '../components/BackButton';
 import Navbar from '../components/Navbar';
 
 const SistemBilangan = () => {
-	// Redirect to Home
-	const navigate = useNavigate();
-	const navigateToHome = () => {
-		navigate('/');
-	};
-
 	// array for sidebar menu
 	let subMaterial = [
 		{
@@ -187,9 +181,7 @@ const SistemBilangan = () => {
 									</p>
 								</section>
 							</div>
-							<div className="back-btn">
-								<button onClick={navigateToHome}>Kembali</button>
-							</div>
+							<BackButton />
 						</div>
 					</div>
 				</div>

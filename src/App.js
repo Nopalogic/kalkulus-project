@@ -16,6 +16,7 @@ function App() {
 				<Route path="/pertidaksamaan" element={<Inequality />} />
 				<Route path="/fungsi" element={<ComingSoon />} />
 				<Route path="/limit" element={<ComingSoon />} />
+				<Route path="/diferensial" element={<ComingSoon />} />
 				<Route path="/integral" element={<ComingSoon />} />
 			</Routes>
 		</BrowserRouter>
