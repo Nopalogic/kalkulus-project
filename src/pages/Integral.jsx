@@ -2,24 +2,9 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import '../assets/styles/pages/integral.scss';
 import Navbar from '../components/Navbar';
+import BackButton from '../components/BackButton';
 
 const Integral = () => {
-	const navigate = useNavigate();
-	const navigateToHome = () => {
-		navigate('/');
-	};
-
-	let subMaterial = [
-		{
-			title: 'Pengertian',
-		},
-		{
-			title: 'subtitusi',
-		},
-		{
-			title: 'merasionalkan penyebut',
-		},
-	];
 
 	return (
 		<div className="integral">
@@ -44,9 +29,7 @@ const Integral = () => {
 								<hr className="my-2" />
 								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tempora illum aut corporis sequi deserunt?</p>
 							</div>
-							<div className="back-btn">
-								<button onClick={navigateToHome}>Kembali</button>
-							</div>
+							<BackButton />
 						</div>
 					</div>
 				</div>

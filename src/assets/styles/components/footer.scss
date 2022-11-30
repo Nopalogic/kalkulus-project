@@ -26,11 +26,6 @@
 
 	p {
 		color: #737373;
-
-		&:hover {
-			color: #3366cc;
-			text-decoration: none;
-		}
 	}
 
 	.footer-links {
@@ -41,14 +36,14 @@
 	li {
 		display: block;
 
-		p {
+		a {
 			color: #737373;
+			text-decoration: none;
 
 			&:active,
 			&:focus,
 			&:hover {
 				color: #3366cc;
-				text-decoration: none;
 				cursor: pointer;
 			}
 		}

@@ -2,24 +2,9 @@ import { useNavigate } from 'react-router-dom';
 import '../assets/styles/pages/limit.scss';
 import Navbar from '../components/Navbar';
 import { Link } from 'react-scroll';
+import BackButton from '../components/BackButton';
 
 const Limit = () => {
-	const navigate = useNavigate();
-	const navigateToHome = () => {
-		navigate('/');
-	};
-
-	let subMaterial = [
-		{
-			title: 'Pengertian',
-		},
-		{
-			title: 'subtitusi',
-		},
-		{
-			title: 'merasionalkan penyebut',
-		},
-	];
 	return (
 		<div className="limit">
 			<Navbar />
@@ -43,9 +28,7 @@ const Limit = () => {
 								<hr className="my-2" />
 								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tempora illum aut corporis sequi deserunt?</p>
 							</div>
-							<div className="back-btn">
-								<button onClick={navigateToHome}>Kembali</button>
-							</div>
+							<BackButton />
 						</div>
 					</div>
 				</div>

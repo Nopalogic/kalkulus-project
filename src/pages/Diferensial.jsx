@@ -2,38 +2,19 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import '../assets/styles/pages/template.scss';
 import Navbar from '../components/Navbar';
+import BackButton from '../components/BackButton';
 
 const Template = () => {
-	const navigate = useNavigate();
-	const navigateToHome = () => {
-		navigate('/');
-	};
-
-	let subMaterial = [
-		{
-			id: 'Lorem',
-			title: 'Lorem',
-		},
-		{
-			id: 'Lorem',
-			title: 'Lorem',
-		},
-		{
-			id: 'Lorem',
-			title: 'Lorem',
-		},
-	];
-
 	return (
-		<div className="sistem-bilangan">
+		<div className="diferensial">
 			<Navbar />
 			<div className="container pb-5">
 				<div className="sidebar">
-					{subMaterial.map((m) => (
-						<Link to={m.id} spy={true} smooth={false} offset={-72} duration={100} style={{ textDecoration: 'none' }}>
+					{diferensial.map((material) => (
+						<Link to={material.id} spy={true} smooth={false} offset={-72} duration={100} style={{ textDecoration: 'none' }}>
 							<div className="card mb-3 bg-dark text-white pointer">
 								<div className="card-body pt-2 pb-2">
-									<h4 className="m-0 p-0">{m.title}</h4>
+									<h4 className="m-0 p-0">{material.title}</h4>
 								</div>
 							</div>
 						</Link>
@@ -47,9 +28,7 @@ const Template = () => {
 								<hr className="my-2" />
 								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tempora illum aut corporis sequi deserunt?</p>
 							</div>
-							<div className="back-btn">
-								<button onClick={navigateToHome}>Kembali</button>
-							</div>
+							<BackButton />
 						</div>
 					</div>
 				</div>

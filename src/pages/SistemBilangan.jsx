@@ -4,32 +4,20 @@ import venn from '../assets/images/him-bilangan.png';
 import '../assets/styles/pages/sistem-bilangan.scss';
 import BackButton from '../components/BackButton';
 import Navbar from '../components/Navbar';
+import { bilangan } from '../data/material';
 
 const SistemBilangan = () => {
-	// array for sidebar menu
-	let subMaterial = [
-		{
-			id: 'pengertian',
-			title: 'Pengertian',
-		},
-		{
-			id: 'persamaan',
-			title: 'Persamaan',
-		},
-	];
-
 	return (
 		<div className="sistem-bilangan">
 			<Navbar />
 			<div className="container pb-5">
-				
 				{/* sidebar */}
 				<div className="sidebar">
-					{subMaterial.map((m) => (
-						<Link to={m.id} spy={true} smooth={false} offset={-72} duration={100} style={{ textDecoration: 'none' }}>
+					{bilangan.map((material) => (
+						<Link to={material.id} spy={true} smooth={false} offset={-72} duration={100} style={{ textDecoration: 'none' }}>
 							<div className="card mb-3 bg-dark text-white pointer">
 								<div className="card-body pt-2 pb-2">
-									<h4 className="m-0 p-0">{m.title}</h4>
+									<h4 className="m-0 p-0">{material.title}</h4>
 								</div>
 							</div>
 						</Link>

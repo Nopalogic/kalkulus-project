@@ -5,41 +5,9 @@ import bg from '../assets/images/bg-kalkulus.png';
 import '../assets/styles/pages/home.scss';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import { modules } from '../data/material';
 
 const Home = () => {
-	let modules = [
-		{
-			url: '/sistem-bilangan',
-			title: 'Sistem Bilangan',
-			desc: 'Himpunan bilangan yang disertai dengan operasi penjumlahan dan per... Read more',
-		},
-		{
-			url: '/pertidaksamaan',
-			title: 'Pertidaksamaan',
-			desc: 'Kalimat terbuka yang memuat ungkapan "tidak sama dengan", "lebih... Read more',
-		},
-		{
-			url: '/fungsi',
-			title: 'Fungsi',
-			desc: 'pemetaan setiap anggota dari suatu himpunan (disebut dengan... Read more',
-		},
-		{
-			url: '/limit',
-			title: 'Limit',
-			desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium... Read more',
-		},
-		{
-			url: '/diferensial',
-			title: 'Diferensial',
-			desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium... Read more',
-		},
-		{
-			url: '/integral',
-			title: 'Integral',
-			desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium... Read more',
-		},
-	];
-
 	return (
 		<div className="home">
 			<Navbar />
@@ -75,7 +43,6 @@ const Home = () => {
 				<div className="container mt-5">
 					<div className="text-center">
 						<h2 className="m-0 mb-2 p-0">Materi</h2>
-						<p className="m-0 p-0 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem architecto natus hic ducimus eligendi. Ipsum.</p>
 					</div>
 					<hr />
 					<div className="container">

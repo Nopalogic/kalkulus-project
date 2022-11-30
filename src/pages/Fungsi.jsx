@@ -6,21 +6,6 @@ import BackButton from '../components/BackButton';
 import Navbar from '../components/Navbar';
 
 const Fungsi = () => {
-	let subMaterial = [
-		{
-			id: 'pengertian',
-			title: 'Pengertian',
-		},
-		{
-			id: 'penyajian',
-			title: 'Penyajian Fungsi',
-		},
-		{
-			id: 'penyajian',
-			title: 'merasionalkan penyebut',
-		},
-	];
-
 	return (
 		<div className="fungsi">
 			<Navbar />

@@ -10,6 +10,10 @@ body {
 	}
 
 	&::-webkit-scrollbar-thumb {
-		background-color: #737373;
+		background-color: #3a4249;
+
+		&:hover {
+			background-color: #737373;
+		}
 	}
 }
