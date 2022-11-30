@@ -22,6 +22,8 @@ const SistemBilangan = () => {
 		<div className="sistem-bilangan">
 			<Navbar />
 			<div className="container pb-5">
+				
+				{/* sidebar */}
 				<div className="sidebar">
 					{subMaterial.map((m) => (
 						<Link to={m.id} spy={true} smooth={false} offset={-72} duration={100} style={{ textDecoration: 'none' }}>
@@ -33,6 +35,7 @@ const SistemBilangan = () => {
 						</Link>
 					))}
 				</div>
+				{/* sidebar */}
 
 				<div className="row">
 					<div className="col-md-8 offset-md-4">
@@ -138,7 +141,7 @@ const SistemBilangan = () => {
 												<div className="col-md-6">
 													<InlineMath math="\sqrt{(x=1)^2}=\sqrt{16}" />
 													<br />
-													<InlineMath math="x+1=\pm4" />
+													<InlineMath math="x+1=\pm 4" />
 													<br />
 													<div className="row">
 														<div className="col-md-5">

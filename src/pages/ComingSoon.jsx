@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import Navbar from '../components/Navbar';
 import '../assets/styles/pages/comingsoon.scss';
+import Navbar from '../components/Navbar';
 
 const ComingSoon = () => {
 	const navigate = useNavigate();

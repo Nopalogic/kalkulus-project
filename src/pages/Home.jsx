@@ -2,49 +2,38 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import bg from '../assets/images/bg-kalkulus.png';
-// import img1 from '../assets/images/math1.jpg';
-// import img2 from '../assets/images/math2.jpg';
-// import img3 from '../assets/images/math5.jpg';
-// import img4 from '../assets/images/math4.jpg';
-// import img5 from '../assets/images/math3.jpg';
 import '../assets/styles/pages/home.scss';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 const Home = () => {
-	let moduls = [
+	let modules = [
 		{
-			// img: img1,
 			url: '/sistem-bilangan',
 			title: 'Sistem Bilangan',
 			desc: 'Himpunan bilangan yang disertai dengan operasi penjumlahan dan per... Read more',
 		},
 		{
-			// img: img2,
 			url: '/pertidaksamaan',
 			title: 'Pertidaksamaan',
 			desc: 'Kalimat terbuka yang memuat ungkapan "tidak sama dengan", "lebih... Read more',
 		},
 		{
-			// img: img3,
 			url: '/fungsi',
 			title: 'Fungsi',
 			desc: 'pemetaan setiap anggota dari suatu himpunan (disebut dengan... Read more',
 		},
 		{
-			// img: img4,
 			url: '/limit',
 			title: 'Limit',
 			desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium... Read more',
 		},
 		{
-			// img: img4,
 			url: '/diferensial',
 			title: 'Diferensial',
 			desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium... Read more',
 		},
 		{
-			// img: img5,
 			url: '/integral',
 			title: 'Integral',
 			desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium... Read more',
@@ -66,12 +55,12 @@ const Home = () => {
 							</p>
 							<hr className="my-4 text-white-50" />
 							{/* <form action="/" method="get" className=""> */}
-								<div className="headerSearch">
-									<input type="text" placeholder="Belajar apa kita hari ini?" className="border-0 fs-4 input-kalkulus" />
-									<button type="submit" className="bg-transparent border-0 fs-4">
-										<FontAwesomeIcon icon={faMagnifyingGlass} />
-									</button>
-								</div>
+							<div className="headerSearch">
+								<input type="text" placeholder="Belajar apa kita hari ini?" className="border-0 fs-4 input-kalkulus" />
+								<button type="submit" className="bg-transparent border-0 fs-4">
+									<FontAwesomeIcon icon={faMagnifyingGlass} />
+								</button>
+							</div>
 							{/* </form> */}
 						</div>
 						<div className="col-md-5 d-none d-md-block d-lg-block text-right">
@@ -91,14 +80,13 @@ const Home = () => {
 					<hr />
 					<div className="container">
 						<div className="row">
-							{moduls.map((modul) => (
+							{modules.map((module) => (
 								<div className="col-md-4 col-xs-12 mb-4">
-									<Link to={modul.url} style={{ textDecoration: 'none' }}>
+									<Link to={module.url} style={{ textDecoration: 'none' }}>
 										<div className="card">
-											{/* <img src={modul.img} alt="gambar" /> */}
 											<div className="card-body text-dark">
-												<h5 className="card-title">{modul.title}</h5>
-												<p className="card-text">{modul.desc}</p>
+												<h5 className="card-title">{module.title}</h5>
+												<p className="card-text">{module.desc}</p>
 											</div>
 										</div>
 									</Link>
