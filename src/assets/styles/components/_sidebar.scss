@@ -1,0 +1,25 @@
+@mixin sidebar {
+  height: 500px;
+  width: 350px;
+  overflow-y: scroll;
+  position: fixed;
+  padding-right: 30px;
+  margin-top: 50px;
+
+  .pointer {
+    cursor: pointer;
+  }
+
+  &::-webkit-scrollbar {
+    width: 1em;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $dark-primary;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $lightgray;
+    border-radius: 4px;
+  }
+}

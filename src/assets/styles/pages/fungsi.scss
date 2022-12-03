@@ -1,32 +1,11 @@
-@import '../properties';
+@import '../properties', '../components/sidebar';
 
 .fungsi {
 	font-family: 'Quicksand', sans-serif;
 	background-color: $dark-secondary;
 
 	.sidebar {
-		height: 485px;
-		overflow-y: scroll;
-		position: fixed;
-		padding-right: 30px;
-		margin-top: 50px;
-
-		.pointer {
-			cursor: pointer;
-		}
-
-		&::-webkit-scrollbar {
-			width: 1em;
-		}
-
-		&::-webkit-scrollbar-track {
-			background-color: $dark-primary;
-		}
-
-		&::-webkit-scrollbar-thumb {
-			background-color: $lightgray;
-			border-radius: 4px;
-		}
+		@include sidebar;
 	}
 
 	.main-fungsi {

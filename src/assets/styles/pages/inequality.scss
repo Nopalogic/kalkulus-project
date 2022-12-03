@@ -1,36 +1,14 @@
-@import '../properties';
+@import '../properties', '../components/sidebar';
 
 .inequality {
 	font-family: $quicksand;
 	background-color: $dark-secondary;
 
 	.sidebar {
-		// height: 485px;
-		width: 350px;
-		overflow-y: scroll;
-		position: fixed;
-		padding-right: 30px;
-		margin-top: 50px;
-
-		.pointer {
-			cursor: pointer;
-		}
-
-		&::-webkit-scrollbar {
-			width: 1em;
-		}
-
-		&::-webkit-scrollbar-track {
-			background-color: $dark-primary;
-		}
-
-		&::-webkit-scrollbar-thumb {
-			background-color: $lightgray;
-			border-radius: 4px;
-		}
+		@include sidebar;
 	}
 
-	.main {
+	.main-inequality {
 		.wrapper {
 			margin: 45px 0 0 10px;
 			padding: 16px;

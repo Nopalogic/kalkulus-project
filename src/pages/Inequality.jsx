@@ -23,7 +23,7 @@ const Inequality = () => {
 				</div>
 				<div className="row">
 					<div className="col-12 col-md-8 offset-md-4">
-						<div className="main">
+						<div className="main-inequality">
 							<div className="wrapper">
 								<h2>Sistem Bilangan Real</h2>
 								<hr className="mt-4 mb-2" />
