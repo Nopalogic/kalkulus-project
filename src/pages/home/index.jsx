@@ -1,11 +1,11 @@
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import bg from '../assets/images/bg-kalkulus.png';
-import '../assets/styles/pages/home.scss';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
-import { modules } from '../data/material';
+import bg from '../../assets/images/bg-kalkulus.png';
+import './home.scss';
+import Footer from '../../components/footer';
+import Navbar from '../../components/Navbar';
+import { modules } from '../../data/material';
 
 const Home = () => {
 	return (

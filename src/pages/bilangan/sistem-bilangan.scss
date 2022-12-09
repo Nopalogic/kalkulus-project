@@ -1,14 +1,14 @@
-@import '../properties', '../components/sidebar';
+@import '../../properties', '../../styles/sidebar';
 
-.fungsi {
-	font-family: 'Quicksand', sans-serif;
+.sistem-bilangan {
+	font-family: $quicksand;
 	background-color: $dark-secondary;
 
 	.sidebar {
 		@include sidebar;
 	}
 
-	.main-fungsi {
+	.main-sisbil {
 		.wrapper {
 			margin: 45px 0 0 10px;
 			padding: 16px;
@@ -19,13 +19,15 @@
 			p {
 				font-size: 20px;
 				text-align: justify;
-				line-height: 28px;
+			}
 
-				li {
-					.ms-custom {
-						margin-left: 115px;
-					}
-				}
+			i,
+			#tnr {
+				font-family: 'Times New Roman', Times, serif;
+			}
+
+			img {
+				width: auto;
 			}
 		}
 	}
@@ -34,5 +36,12 @@
 @media screen and (max-width: 900px) {
 	.sidebar {
 		display: none;
+	}
+
+	.main-sisbil {
+		.wrapper > p {
+			font-size: 12px;
+			text-align: left;
+		}
 	}
 }

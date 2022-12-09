@@ -1,9 +1,9 @@
 import { InlineMath } from 'react-katex';
 import { Link } from 'react-scroll';
-import '../assets/styles/pages/inequality.scss';
-import BackButton from '../components/BackButton';
-import Navbar from '../components/Navbar';
-import { inEquality } from '../data/material';
+import BackButton from '../../components/backButton';
+import Navbar from '../../components/Navbar';
+import { inEquality } from '../../data/material';
+import './inequality.scss';
 
 const Inequality = () => {
 	return (

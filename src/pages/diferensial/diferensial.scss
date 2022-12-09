@@ -1,14 +1,14 @@
-@import '../properties', '../components/sidebar';
+@import '../../properties', '../../styles/sidebar';
 
-.limit {
-	font-family: 'Quicksand', sans-serif;
+.diferensial {
+	font-family: $quicksand;
 	background-color: $dark-secondary;
 
 	.sidebar {
 		@include sidebar;
 	}
 
-	.main-limit {
+	.main-diferensial {
 		.wrapper {
 			height: 100vh;
 			margin: 45px 0 0 10px;

@@ -1,6 +1,6 @@
-@import '../properties', '../components/sidebar';
+@import '../../properties', '../../styles/sidebar';
 
-.diferensial {
+.sistem-bilangan {
 	font-family: $quicksand;
 	background-color: $dark-secondary;
 
@@ -8,7 +8,7 @@
 		@include sidebar;
 	}
 
-	.main-diferensial {
+	.main-integral {
 		.wrapper {
 			height: 100vh;
 			margin: 45px 0 0 10px;

@@ -1,14 +1,14 @@
-@import '../properties', '../components/sidebar';
+@import '../../properties', '../../styles/sidebar';
 
-.inequality {
-	font-family: $quicksand;
+.fungsi {
+	font-family: 'Quicksand', sans-serif;
 	background-color: $dark-secondary;
 
 	.sidebar {
 		@include sidebar;
 	}
 
-	.main-inequality {
+	.main-fungsi {
 		.wrapper {
 			margin: 45px 0 0 10px;
 			padding: 16px;
@@ -19,14 +19,11 @@
 			p {
 				font-size: 20px;
 				text-align: justify;
+				line-height: 28px;
 
-				table {
-					margin: 12px 0;
-
-					td {
-						text-align: center;
-						width: 50px;
-						border: 2px solid #fff;
+				li {
+					.ms-custom {
+						margin-left: 115px;
 					}
 				}
 			}
@@ -37,10 +34,5 @@
 @media screen and (max-width: 900px) {
 	.sidebar {
 		display: none;
-	}
-
-	.wrapper > p {
-		font-size: 12px;
-		text-align: left;
 	}
 }

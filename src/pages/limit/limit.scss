@@ -1,13 +1,14 @@
-@import '../properties', '../components/sidebar';
-.sistem-bilangan {
-	font-family: $quicksand;
+@import '../../properties', '../../styles/sidebar';
+
+.limit {
+	font-family: 'Quicksand', sans-serif;
 	background-color: $dark-secondary;
 
 	.sidebar {
 		@include sidebar;
 	}
 
-	.main-integral {
+	.main-limit {
 		.wrapper {
 			height: 100vh;
 			margin: 45px 0 0 10px;

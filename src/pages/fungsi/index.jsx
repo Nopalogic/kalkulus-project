@@ -1,10 +1,9 @@
 import { InlineMath } from 'react-katex';
-import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
-import '../assets/styles/pages/fungsi.scss';
-import BackButton from '../components/BackButton';
-import Navbar from '../components/Navbar';
-import { fungsi } from '../data/material';
+import BackButton from '../../components/backButton';
+import Navbar from '../../components/Navbar';
+import { fungsi } from '../../data/material';
+import './fungsi.scss';
 
 const Fungsi = () => {
 	return (

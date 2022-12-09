@@ -1,6 +1,6 @@
-@import '../properties', '../components/sidebar';
+@import '../../properties', '../../styles/sidebar';
 
-.sistem-bilangan {
+.inequality {
 	font-family: $quicksand;
 	background-color: $dark-secondary;
 
@@ -8,7 +8,7 @@
 		@include sidebar;
 	}
 
-	.main-sisbil {
+	.main-inequality {
 		.wrapper {
 			margin: 45px 0 0 10px;
 			padding: 16px;
@@ -19,15 +19,16 @@
 			p {
 				font-size: 20px;
 				text-align: justify;
-			}
 
-			i,
-			#tnr {
-				font-family: 'Times New Roman', Times, serif;
-			}
+				table {
+					margin: 12px 0;
 
-			img {
-				width: auto;
+					td {
+						text-align: center;
+						width: 50px;
+						border: 2px solid #fff;
+					}
+				}
 			}
 		}
 	}
@@ -38,10 +39,8 @@
 		display: none;
 	}
 
-	.main-sisbil {
-		.wrapper > p {
-			font-size: 12px;
-			text-align: left;
-		}
+	.wrapper > p {
+		font-size: 12px;
+		text-align: left;
 	}
 }

@@ -1,12 +1,13 @@
 import { useNavigate } from 'react-router-dom';
-import '../assets/styles/pages/limit.scss';
-import Navbar from '../components/Navbar';
 import { Link } from 'react-scroll';
-import BackButton from '../components/BackButton';
+import '.integral.scss';
+import Navbar from '../../components/Navbar';
+import BackButton from '../../components/backButton';
 
-const Limit = () => {
+const Integral = () => {
+
 	return (
-		<div className="limit">
+		<div className="integral">
 			<Navbar />
 			<div className="container pb-5">
 				<div className="sidebar">
@@ -22,9 +23,9 @@ const Limit = () => {
 				</div>
 				<div className="row">
 					<div className="col-12 col-md-8 offset-md-4">
-						<div className="main-limit">
+						<div className="main-integral">
 							<div className="wrapper">
-								<h2>Limit</h2>
+								<h2>Pertidaksamaan</h2>
 								<hr className="my-2" />
 								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tempora illum aut corporis sequi deserunt?</p>
 							</div>
@@ -37,4 +38,4 @@ const Limit = () => {
 	);
 };
 
-export default Limit;
+export default Integral;

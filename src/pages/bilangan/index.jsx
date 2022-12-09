@@ -1,10 +1,10 @@
 import { BlockMath, InlineMath } from 'react-katex';
 import { Link } from 'react-scroll';
-import venn from '../assets/images/him-bilangan.png';
-import '../assets/styles/pages/sistem-bilangan.scss';
-import BackButton from '../components/BackButton';
-import Navbar from '../components/Navbar';
-import { bilangan } from '../data/material';
+import venn from '../../assets/images/him-bilangan.png';
+import './sistem-bilangan.scss';
+import BackButton from '../../components/backButton';
+import Navbar from '../../components/Navbar';
+import { bilangan } from '../../data/material';
 
 const SistemBilangan = () => {
 	return (
