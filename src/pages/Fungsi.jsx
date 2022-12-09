@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import '../assets/styles/pages/fungsi.scss';
 import BackButton from '../components/BackButton';
 import Navbar from '../components/Navbar';
+import { fungsi } from '../data/material';
 
 const Fungsi = () => {
 	return (
@@ -11,11 +12,11 @@ const Fungsi = () => {
 			<Navbar />
 			<div className="container pb-5">
 				<div className="sidebar">
-					{subMaterial.map((m) => (
-						<Link to={m.id} spy={true} smooth={false} offset={-72} duration={100} style={{ textDecoration: 'none' }}>
+					{fungsi.map((module) => (
+						<Link to={module.id} spy={true} smooth={false} offset={-72} duration={100} style={{ textDecoration: 'none' }}>
 							<div className="card mb-3 bg-dark text-white pointer">
 								<div className="card-body pt-2 pb-2">
-									<h4 className="m-0 p-0">{m.title}</h4>
+									<h4 className="m-0 p-0">{module.title}</h4>
 								</div>
 							</div>
 						</Link>
@@ -128,6 +129,15 @@ const Fungsi = () => {
 												</li>
 											</ol>
 										</div>
+									</p>
+								</section>
+								<section id="macam-fungsi">
+									<h5 className="fw-bold">Macam-macam fungsi dan grafiknya</h5>
+									<p>
+										<h6 className='fw-bold ms-2'>Fungsi genap dan Fungsi Ganjil</h6>
+									</p>
+									<p>
+										<h6 className='fw-bold ms-2'>Sifat-sifat Fungsi genap dan Fungsi Ganjil</h6>
 									</p>
 								</section>
 							</div>

@@ -16,7 +16,7 @@ const Home = () => {
 				<div className="container align-middle">
 					<div className="row pt-5 pb-3">
 						<div className="col-md-7">
-							<h1 className="display-1 fw-bold text-white">KALKULUS</h1>
+							<h1 className="display-1 fw-bold text-white">KALKUL<span className='text-danger'>US</span></h1>
 							<p className="fs-3 text-white lh-kalkulus">
 								Website belajar kalkulus terlengkap dan mudah dipahami, seperti <span className="badge bg-danger">Fungsi</span> <span className="badge bg-primary">Limit</span> <span className="badge bg-success">Integral</span>{' '}
 								<span className="badge bg-warning">Diferensial</span>
