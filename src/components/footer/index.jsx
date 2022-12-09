@@ -15,13 +15,13 @@ const Footer = () => {
 						<h6>teknologi</h6>
 						<ul class="footer-links">
 							<li>
-								<a href='https://reactjs.org/' target='_blank'>React JS</a>
+								<a href='https://reactjs.org/'>React JS</a>
 							</li>
 							<li>
-								<a href='https://sass-lang.com/' target='_blank'>Sass</a>
+								<a href='https://sass-lang.com/'>Sass</a>
 							</li>
 							<li>
-								<a href='https://getbootstrap.com/' target='_blank'>Bootstrap CSS</a>
+								<a href='https://getbootstrap.com/'>Bootstrap CSS</a>
 							</li>
 						</ul>
 					</div>
