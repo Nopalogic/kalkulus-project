@@ -5,6 +5,7 @@ import Fungsi from './pages/fungsi';
 import Home from './pages/home';
 import Pertidaksamaan from './pages/pertidaksamaan';
 import SistemBilangan from './pages/bilangan';
+// import QuizApp from './components/quizApp';
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 				<Route path="/limit" element={<ComingSoon />} />
 				<Route path="/diferensial" element={<ComingSoon />} />
 				<Route path="/integral" element={<ComingSoon />} />
+				{/* <Route path="/quiz" element={<QuizApp />} /> */}
 			</Routes>
 		</BrowserRouter>
 	);
