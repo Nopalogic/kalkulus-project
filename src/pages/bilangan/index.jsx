@@ -2,7 +2,8 @@ import { BlockMath, InlineMath } from 'react-katex';
 import { Link } from 'react-scroll';
 import venn from '../../assets/images/him-bilangan.png';
 import './sistem-bilangan.scss';
-import BackButton from '../../components/backButton';
+import BackButton from '../../components/button/BackButton';
+import QuizButton from '../../components/button/QuizButton';
 import Navbar from '../../components/Navbar';
 import { bilangan } from '../../data/material';
 
@@ -172,7 +173,10 @@ const SistemBilangan = () => {
 									</p>
 								</section>
 							</div>
-							<BackButton />
+							<div className="button-wrapper">
+								<QuizButton url="quiz-sistem-bilangan" />
+								<BackButton />
+							</div>
 						</div>
 					</div>
 				</div>

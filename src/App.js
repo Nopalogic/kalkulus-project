@@ -5,7 +5,9 @@ import Fungsi from './pages/fungsi';
 import Home from './pages/home';
 import Pertidaksamaan from './pages/pertidaksamaan';
 import SistemBilangan from './pages/bilangan';
-// import QuizApp from './components/quizApp';
+import FungsiQuiz from './pages/fungsi/quiz';
+import BilanganQuiz from './pages/bilangan/quiz';
+import PertidaksamaanQuiz from './pages/pertidaksamaan/quiz';
 
 function App() {
 	return (
@@ -14,12 +16,14 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/sistem-bilangan" element={<SistemBilangan />} />
+				<Route path="/quiz-sistem-bilangan" element={<BilanganQuiz />} />
 				<Route path="/pertidaksamaan" element={<Pertidaksamaan />} />
+				<Route path="/quiz-pertidaksamaan" element={<PertidaksamaanQuiz />} />
 				<Route path="/fungsi" element={<Fungsi />} />
+				<Route path="/quiz-fungsi" element={<FungsiQuiz />} />
 				<Route path="/limit" element={<ComingSoon />} />
 				<Route path="/diferensial" element={<ComingSoon />} />
 				<Route path="/integral" element={<ComingSoon />} />
-				{/* <Route path="/quiz" element={<QuizApp />} /> */}
 			</Routes>
 		</BrowserRouter>
 	);

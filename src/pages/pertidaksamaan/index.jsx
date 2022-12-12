@@ -1,6 +1,7 @@
 import { InlineMath } from 'react-katex';
 import { Link } from 'react-scroll';
-import BackButton from '../../components/backButton';
+import BackButton from '../../components/button/BackButton';
+import QuizButton from '../../components/button/QuizButton';
 import Navbar from '../../components/Navbar';
 import { inEquality } from '../../data/material';
 import './inequality.scss';
@@ -237,7 +238,10 @@ const Inequality = () => {
 									</p>
 								</section>
 							</div>
-							<BackButton />
+							<div className="button-wrapper">
+								<QuizButton url="quiz-pertidaksamaan" />
+								<BackButton />
+							</div>
 						</div>
 					</div>
 				</div>

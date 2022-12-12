@@ -1,6 +1,7 @@
 import { InlineMath } from 'react-katex';
 import { Link } from 'react-scroll';
-import BackButton from '../../components/backButton';
+import BackButton from '../../components/button/BackButton';
+import QuizButton from '../../components/button/QuizButton';
 import Navbar from '../../components/Navbar';
 import { fungsi } from '../../data/material';
 import './fungsi.scss';
@@ -133,14 +134,17 @@ const Fungsi = () => {
 								<section id="macam-fungsi">
 									<h5 className="fw-bold">Macam-macam fungsi dan grafiknya</h5>
 									<p>
-										<h6 className='fw-bold ms-2'>Fungsi genap dan Fungsi Ganjil</h6>
+										<h6 className="fw-bold ms-2">Fungsi genap dan Fungsi Ganjil</h6>
 									</p>
 									<p>
-										<h6 className='fw-bold ms-2'>Sifat-sifat Fungsi genap dan Fungsi Ganjil</h6>
+										<h6 className="fw-bold ms-2">Sifat-sifat Fungsi genap dan Fungsi Ganjil</h6>
 									</p>
 								</section>
 							</div>
-							<BackButton />
+							<div className="button-wrapper">
+								<QuizButton url="quiz-fungsi" />
+								<BackButton />
+							</div>
 						</div>
 					</div>
 				</div>

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './quizApp.scss';
+import '../../components/quizApp/quizApp.scss';
 import { bilanganQuestions as questions } from '../../data/quizAppData';
-import Navbar from '../Navbar';
+import Navbar from '../../components/Navbar';
 
-const QuizApp = () => {
+const FungsiQuiz = () => {
 	// Properties
 	const [showResults, setShowResults] = useState(false);
 	const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -81,4 +81,4 @@ const QuizApp = () => {
 	);
 };
 
-export default QuizApp;
+export default FungsiQuiz;

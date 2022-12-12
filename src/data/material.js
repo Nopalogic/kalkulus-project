@@ -18,17 +18,17 @@ export let modules = [
   {
     url: '/limit',
     title: 'Limit',
-    desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium... Read more',
+    desc: 'Nilai pendekatan di sekitar suatu titik baik dari kiri mauupn kanan atau... Read more',
   },
   {
     url: '/diferensial',
     title: 'Diferensial',
-    desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium... Read more',
+    desc: 'Fungsi lain dari fungsi sebelumnya, misalnya fungsi f menjadi fu... Read more',
   },
   {
     url: '/integral',
     title: 'Integral',
-    desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium... Read more',
+    desc: 'Operasi matematika yang merupakan kebalikan (invers) dari opera... Read more',
   },
 ];
 
