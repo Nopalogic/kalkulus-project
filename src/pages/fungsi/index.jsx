@@ -6,6 +6,9 @@ import Navbar from '../../components/Navbar';
 import { fungsi } from '../../data/material';
 import './fungsi.scss';
 
+import garis from '../../assets/images/diagram-garis.png';
+import panah from '../../assets/images/diagram-panah.png';
+
 const Fungsi = () => {
 	return (
 		<div className="fungsi">
@@ -38,10 +41,10 @@ const Fungsi = () => {
 									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus totam illum veritatis laudantium optio aliquid.</p>
 									<p>
 										<b>Diagram Panah</b>
-										<div className="container">
+										<div className="container mt-2">
 											<div className="row">
 												<div className="col-md-4">
-													<img src="" alt="" />
+													<img src={panah} alt="diagram-panah" className='img-fluid' />
 												</div>
 												<div className="col-md-8">
 													<p>
@@ -54,10 +57,10 @@ const Fungsi = () => {
 									</p>
 									<p>
 										<b>Diagram Grafik</b>
-										<div className="container">
+										<div className="container mt-2">
 											<div className="row">
 												<div className="col-md-4">
-													<img src="" alt="" />
+													<img src={garis} alt="diagram-garis" className='img-fluid' />
 												</div>
 												<div className="col-md-8">
 													<p>
