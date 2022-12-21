@@ -1,13 +1,12 @@
 import { InlineMath } from 'react-katex';
 import { Link } from 'react-scroll';
+import garis from '../../assets/images/diagram-garis.png';
+import panah from '../../assets/images/diagram-panah.png';
 import BackButton from '../../components/button/BackButton';
 import QuizButton from '../../components/button/QuizButton';
 import Navbar from '../../components/Navbar';
 import { fungsi } from '../../data/material';
 import './fungsi.scss';
-
-import garis from '../../assets/images/diagram-garis.png';
-import panah from '../../assets/images/diagram-panah.png';
 
 const Fungsi = () => {
 	return (
@@ -44,7 +43,7 @@ const Fungsi = () => {
 										<div className="container mt-2">
 											<div className="row">
 												<div className="col-md-4">
-													<img src={panah} alt="diagram-panah" className='img-fluid' />
+													<img src={panah} alt="diagram-panah" className="img-fluid" />
 												</div>
 												<div className="col-md-8">
 													<p>
@@ -60,7 +59,7 @@ const Fungsi = () => {
 										<div className="container mt-2">
 											<div className="row">
 												<div className="col-md-4">
-													<img src={garis} alt="diagram-garis" className='img-fluid' />
+													<img src={garis} alt="diagram-garis" className="img-fluid" />
 												</div>
 												<div className="col-md-8">
 													<p>
@@ -74,17 +73,15 @@ const Fungsi = () => {
 									<p>
 										<b>Aljabar</b>
 										<br />
-										Penyajian fungsi dengan menggunakan rumus matematis, misalnya luas lingkaran adalah <InlineMath math="L=\pi r^2" />. Disini domainnya adalah jari-jari (r) dan rangenya adalah luas (L). <br />
+										Penyajian fungsi dengan menggunakan rumus matematis, misalnya luas lingkaran adalah <InlineMath math="L=\pi r^2" />. Disini domainnya adalah jari-jari {'(r)'} dan rangenya adalah luas {'(L)'}. <br />
 										Contoh: <br />
 										<div className="container">
-											<InlineMath math="g(x)=\sqrt{9-x^2}" />
+											Carilah daerah defini dan daerah nilai dar fungsi <InlineMath math="g(x)=\sqrt{9-x^2}" />!
 											<br />
-											<InlineMath math="\sqrt{9-9}=\sqrt{0}" />
+											Dalam hal ini kita harus membatasi x sehingga <InlineMath math="g(x) = 9-x^2 \lt 0" />, dengan tujuan menghindari nilai tak riil.
 											<br />
-
-											{/* <InlineMath math="g(x)=\sqrt{9-x^2}" /><br />
-											<InlineMath math="D_g=\set{x|-3 \le x \le 3, x \in R}" /><br />
-											<InlineMath math="R_g=\set{x|0 \le g(x) \le 3, x \in R}" /><br /> */}
+											Menentukan domain g dapat mengguanakan cara berikut: <br />
+											<InlineMath math="9-x^2 \lt 0" />, maka <InlineMath math="9 \lt x^2" /> atau <InlineMath math="x^2 \lt 9" />, sehingga <InlineMath math="g(x) = 9-x^2 \lt 0" /> jadi domain g adalah <InlineMath math="D_g = \set(x \in R | -3 \le x \le 3)" /> <br />
 										</div>
 									</p>
 								</section>
@@ -92,55 +89,27 @@ const Fungsi = () => {
 								<section id="kesamaan">
 									<h5 className="fw-bold">Kesamaan dan Operasi Dua Fungsi</h5>
 									<p>
-										Contoh: <br />
 										<div className="container">
-											Jika <InlineMath math="f(x)=\frac{1-x}{1+x}" /> dan <InlineMath math="g(x)=\frac{1-x}{x}" />, dengan masing-masing domain <InlineMath math="D_f= \set{x|x \neq -1}" /> dan <InlineMath math="D_g= \set{x|x \neq 0}" />,
-											maka dapat ditentukan operasi berikut ini:
-											<ol>
+											Misalkan f dan g terdefinisi sebagai himpunan D, maka
+											<ol className="">
 												<li>
-													<InlineMath math="(f+g)(x)=f(x)+g(x)" />
-													<br />
-													<div className="ms-custom">
-														<InlineMath math="= \frac{1-x}{1+x} + \frac{1-x}{x}" />
-														<br />
-														<InlineMath math="= \frac{x(1-x)+(1+x)(1-x)}{x(1+x)}" />
-														<br />
-														<InlineMath math="= \frac{x-x^2+(-x^2+x+1-x)}{x(1+x)}" />
-														<br />
-														<InlineMath math="= \frac{-x^2-x^2+x+1-x)}{x(1+x)}" />
-														<br />
-													</div>
+													<InlineMath math="(f+g)(x)=f(x)+g(x)" /> untuk setiap <InlineMath math="x \in D" />.
 												</li>
 												<li>
-													<InlineMath math="(f-g)(x)=f(x)-g(x)" />
-													<br />
+													<InlineMath math="(f-g)(x)=f(x)-g(x)" /> untuk setiap <InlineMath math="x \in D" />.
 												</li>
 												<li>
-													<InlineMath math="(f \cdot g)(x)=f(x) \cdot g(x)" />
-													<br />
+													<InlineMath math="(f \cdot g)(x)=f(x) \cdot g(x)" /> untuk setiap <InlineMath math="x \in D" />.
 												</li>
 												<li>
-													<InlineMath math="(\frac f g)(x)=\frac{f(x)}{g(x)}" />
-													<br />
-													<div className="ms-custom">
-														<InlineMath math="=\frac{\big(\frac{1-x}{1+x}\big)}{(\frac{1-x}{x})}" />
-													</div>
+													<InlineMath math="(k \cdot f)(x)=k \cdot f(x)" /> untuk setiap <InlineMath math="x \in D" /> dan k adalah konstanta.
 												</li>
 												<li>
-													<InlineMath math="(5 \cdot f)(x)=5 \cdot f(x)" />
-													<br />
+													<InlineMath math="\Big(\frac{f}{g}\Big)(x)=\frac{f(x)}{g(x)}" /> untuk setiap <InlineMath math="x \in D" /> dan <InlineMath math="g(x) \neq 0" />
 												</li>
 											</ol>
+											Jika domain f adalah D<sub>f</sub> dan domain g adalah D<sub>g</sub> maka domain untuk fungsi f dan g diatas adalah <InlineMath math="D_f \cap D_g" />.
 										</div>
-									</p>
-								</section>
-								<section id="macam-fungsi">
-									<h5 className="fw-bold">Macam-macam fungsi dan grafiknya</h5>
-									<p>
-										<h6 className="fw-bold ms-2">Fungsi genap dan Fungsi Ganjil</h6>
-									</p>
-									<p>
-										<h6 className="fw-bold ms-2">Sifat-sifat Fungsi genap dan Fungsi Ganjil</h6>
 									</p>
 								</section>
 							</div>

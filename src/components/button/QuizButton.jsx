@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import './button.scss';
 
-const BackButton = (props) => {
+const QuizButton = (props) => {
 	const navigate = useNavigate();
 
 	const navigateToQuiz = () => {
@@ -11,4 +11,4 @@ const BackButton = (props) => {
 	return <button onClick={navigateToQuiz}>Kuis</button>;
 };
 
-export default BackButton;	
+export default QuizButton;	

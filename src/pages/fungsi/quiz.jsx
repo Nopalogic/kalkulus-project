@@ -35,9 +35,7 @@ const FungsiQuiz = () => {
 		<div className="quizApp">
 			<Navbar />
 			<div className="container-fluid d-flex justify-content-center mt-5 pt-4">
-				{/* Show results or show the question game  */}
 				{showResults ? (
-					/* Final Results */
 					<div className="final-results">
 						<h1>Final Results</h1>
 						<h2>
@@ -45,13 +43,11 @@ const FungsiQuiz = () => {
 						</h2>
 						<div className="d-flex flex-column">
 							<button onClick={() => restartGame()}>Restart</button>
-							<button onClick={() => navigate('/')}>Kembali</button>
+							<button onClick={() => navigate('/fungsi')}>Kembali</button>
 						</div>
 					</div>
 				) : (
-					/* Question Card  */
 					<div className="question-card">
-						{/* Current Question  */}
 						<div className="row">
 							<div className="col-6">
 								<div className="question-title">
@@ -62,7 +58,7 @@ const FungsiQuiz = () => {
 								</div>
 							</div>
 							<div className="col-6">
-								{/* List of possible answers  */}
+								<div className="options"></div>
 								<ul>
 									{questions[currentQuestion].options.map((option) => {
 										return (

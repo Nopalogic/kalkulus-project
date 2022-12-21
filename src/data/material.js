@@ -82,10 +82,6 @@ export let fungsi = [
     id: 'kesamaan',
     title: 'Kesamaan dan Operasi Dua Fungsi',
   },
-  {
-    id: 'macam-fungsi',
-    title: 'Kesamaan dan Operasi Dua Fungsi',
-  },
 ];
 
 // materi limit

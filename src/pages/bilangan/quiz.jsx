@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../../components/Navbar';
 import '../../components/quizApp/quizApp.scss';
 import { bilanganQuestions as questions } from '../../data/quizAppData';
-import Navbar from '../../components/Navbar';
+import { BlockMath } from 'react-katex';
 
-const FungsiQuiz = () => {
+const BilanganQuiz = () => {
 	// Properties
 	const [showResults, setShowResults] = useState(false);
 	const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -45,7 +46,7 @@ const FungsiQuiz = () => {
 						</h2>
 						<div className="d-flex flex-column">
 							<button onClick={() => restartGame()}>Restart</button>
-							<button onClick={() => navigate('/')}>Kembali</button>
+							<button onClick={() => navigate('/sistem-bilangan')}>Kembali</button>
 						</div>
 					</div>
 				) : (
@@ -58,7 +59,7 @@ const FungsiQuiz = () => {
 									<h2>
 										Question: {currentQuestion + 1} out of {questions.length}
 									</h2>
-									<h3 className="question-text">{questions[currentQuestion].text}</h3>
+									<h3 className="question-text"><BlockMath math={questions[currentQuestion].text} /></h3>
 								</div>
 							</div>
 							<div className="col-6">
@@ -81,4 +82,4 @@ const FungsiQuiz = () => {
 	);
 };
 
-export default FungsiQuiz;
+export default BilanganQuiz;

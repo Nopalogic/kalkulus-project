@@ -1,7 +1,6 @@
-@import '../../properties', '../../styles/sidebar';
+@import '../../properties';
 
 .fungsi {
-	font-family: 'Quicksand', sans-serif;
 	background-color: $dark-secondary;
 
 	.sidebar {
@@ -24,15 +23,13 @@
 				li {
 					.ms-custom {
 						margin-left: 115px;
+						// line-height: 50px;
 					}
 				}
 			}
 		}
 		.button-wrapper {
-			margin-top: 15px;
-			display: flex;
-			justify-content: right;
-			gap: 10px;
+			@include buttonWrapper;
 		}
 	}
 }

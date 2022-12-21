@@ -1,7 +1,7 @@
 // Darkmode
 $dark-primary: #212529;
 $dark-secondary: #2a323e;
-$gray: #444A54;
+$gray: #444a54;
 $lightgray: #737373;
 
 // Universal
@@ -13,3 +13,36 @@ $blue-secondary: #3366cc;
 
 // Font
 $quicksand: 'Quicksand', sans-serif;
+
+@mixin sidebar {
+  height: 500px;
+  width: 350px;
+  overflow-y: scroll;
+  position: fixed;
+  padding-right: 30px;
+  margin-top: 50px;
+
+  .pointer {
+    cursor: pointer;
+  }
+
+  &::-webkit-scrollbar {
+    width: 1em;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $dark-primary;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $lightgray;
+    border-radius: 4px;
+  }
+}
+
+@mixin buttonWrapper {
+	margin-top: 15px;
+	display: flex;
+	justify-content: right;
+	gap: 10px;
+}

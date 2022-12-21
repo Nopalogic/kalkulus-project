@@ -208,6 +208,7 @@ const Inequality = () => {
 
 									<p id="NM">
 										<b>Nilai Mutlak</b> <br />
+										Nilai mutlak, yang juga disebut sebagai nilai absolut merupakan jarak suatu bilangan ke bilangan nol pada garis bilangan riil. <br />
 										Contoh: <br />
 										<div className="container">
 											<InlineMath math="|x+1|\lt 3" />

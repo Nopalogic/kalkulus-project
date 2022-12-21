@@ -45,7 +45,7 @@ const PertidaksamaanQuiz = () => {
 						</h2>
 						<div className="d-flex flex-column">
 							<button onClick={() => restartGame()}>Restart</button>
-							<button onClick={() => navigate('/')}>Kembali</button>
+							<button onClick={() => navigate('/pertidaksamaan')}>Kembali</button>
 						</div>
 					</div>
 				) : (
