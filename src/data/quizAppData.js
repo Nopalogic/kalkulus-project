@@ -42,21 +42,21 @@ export const pertidaksamaanQuestions = [
 
 export const fungsiQuestions = [
 	{
-		text: 'Siapa nama bapak Galih?',
+		text: 'Penyajian fungsi dengan menggunakan rumus matematis.',
 		options: [
-			{ id: 0, text: 'Yazeed', isCorrect: false },
-			{ id: 1, text: 'Iman', isCorrect: false },
-			{ id: 2, text: 'Andi', isCorrect: true },
-			{ id: 3, text: 'Usoop', isCorrect: false },
+			{ id: 0, text: 'Grafik', isCorrect: false },
+			{ id: 1, text: 'Panah', isCorrect: false },
+			{ id: 2, text: 'Aljabar', isCorrect: true },
+			{ id: 3, text: 'Diagram', isCorrect: false },
 		],
 	},
 	{
-		text: 'Pa Uus adalah dosen aplikom?',
+		text: 'Domain dilambangkan dengan?',
 		options: [
-			{ id: 0, text: 'Benar', isCorrect: true },
-			{ id: 1, text: 'Salah', isCorrect: false },
-			{ id: 2, text: 'Salah', isCorrect: false },
-			{ id: 3, text: 'Salah', isCorrect: false },
+			{ id: 0, text: 'D', isCorrect: true },
+			{ id: 1, text: 'S', isCorrect: false },
+			{ id: 2, text: 'R', isCorrect: false },
+			{ id: 3, text: 'A', isCorrect: false },
 		],
 	},
 ];
